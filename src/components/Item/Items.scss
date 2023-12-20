@@ -1,0 +1,70 @@
+.dropzone {
+    width: 400px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 2rem auto;
+    background-color: rgb(221, 214, 214);
+
+    &-title {
+        font-size: 2rem;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    &-file {
+        width: 100%;
+        height: 375px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        background: #fafafa;
+        border: 2px dashed #ccc;
+        overflow: auto;
+        cursor: pointer;
+
+        &:hover {
+            background: #f0f0f0;
+        }
+    }
+
+    &-btn {
+        background-color: green;
+        color: white;
+        margin: 1rem;
+    }
+
+    &-item {
+        width: 150px;
+        min-height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem;
+        background-color: grey;
+        overflow: hidden;
+        cursor: auto;
+    }
+
+    &-img {
+        width: 50px; /* Ajusta el tamaño de la imagen según sea necesario */
+        max-height: 70px; /* Para mantener la proporción de aspecto */
+        object-fit: cover;
+    }
+
+    &-titleImg {
+        font-style: italic;
+        text-align: center;
+        margin:.5rem;
+    }
+
+    &-fileBtn {
+        background-color: red;
+        color: white;
+        margin: .5rem 0;
+    }
+}
